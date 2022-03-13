@@ -1,5 +1,9 @@
 import React from "react";
 import MolinoRotacionPhoto from "../../assets/img/molino-rotacion-1.jpg";
+import HipsometroPhoto from "../../assets/img/hipsometro-1.jpg";
+import Telescopio from "../../assets/img/telescopio.png";
+import Cartografico from "../../assets/img/cartografico.png";
+import CuartoCirculo from "../../assets/img/cuarto-circulo.png";
 
 const PrototypesSection = () => {
   return (
@@ -14,11 +18,11 @@ const PrototypesSection = () => {
           <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
             <div
               tabIndex="0"
-              className="focus:outline-none"
+              className="focus:outline-none my-auto"
               aria-label="card 1"
             >
               <img
-                className="focus:outline-none w-full rounded-t-3xl"
+                className="focus:outline-none w-full  rounded-t-3xl "
                 src={MolinoRotacionPhoto}
                 alt="molino_rotacion"
               />
@@ -77,22 +81,22 @@ const PrototypesSection = () => {
                   aria-label="card 2"
                 >
                   <img
-                    className="focus:outline-none w-full"
-                    src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(2).png"
-                    alt="games"
+                    className="focus:outline-none w-full rounded-t-3xl max-h-72 "
+                    src={HipsometroPhoto}
+                    alt="molino_rotacion"
                   />
                   <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
                     <p
                       tabIndex="0"
                       className="focus:outline-none  text-sm text-white font-semibold tracking-wide"
                     >
-                      Bruce Wayne
+                      Hipsómetro
                     </p>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      13TH Oct, 2020
+                      1804
                     </p>
                   </div>
                   <div className="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
@@ -100,15 +104,29 @@ const PrototypesSection = () => {
                       tabIndex="0"
                       className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider"
                     >
-                      Transactions
+                      Hipsómetro
                     </h1>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
                     >
-                      Find the latest events updates or create events, concerts,
-                      conferences, workshops...
+                      Al terminar sus estudios, fue inspirado por varios textos
+                      de autores que buscaban redescubrir América, aprovechando
+                      su locación (Popayán) para determinar la latitud, la
+                      longitud y la altitud...
                     </p>
+                    <div className="w-full flex justify-end">
+                      <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                        <span className=" text-base tracking-wide text-indigo-700">
+                          Conocer mas
+                        </span>
+                        <img
+                          className="ml-2"
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-column-with-main-and-supporting-svg1.svg"
+                          alt="arrow"
+                        />
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -117,38 +135,50 @@ const PrototypesSection = () => {
                   aria-label="card 3"
                 >
                   <img
-                    className="focus:outline-none  w-full"
-                    src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(3).png"
-                    alt="notes"
+                    className="focus:outline-none  w-full max-h-72 rounded-t-3xl "
+                    src={CuartoCirculo}
+                    alt="CuartoCirculo"
                   />
                   <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      Bruce Wayne
+                      Cuarto de círculo
                     </p>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                    >
-                      13TH Oct, 2020
-                    </p>
+                    ></p>
                   </div>
                   <div className="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
                     <h1
                       tabIndex="0"
                       className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider"
                     >
-                      Transactions
+                      Cuarto de círculo
                     </h1>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
                     >
-                      Find the latest events updates or create events, concerts,
-                      conferences, workshops...
+                      Es un antiguo instrumento utilizado para medir ángulos en
+                      Astronomía y navegación. Utilizado por Francisco José de
+                      Caldas, del cual construyó el suyo a partir de las láminas
+                      de sus libros...
                     </p>
+                    <div className="w-full flex justify-end">
+                      <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                        <span className=" text-base tracking-wide text-indigo-700">
+                          Conocer mas
+                        </span>
+                        <img
+                          className="ml-2"
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-column-with-main-and-supporting-svg1.svg"
+                          alt="arrow"
+                        />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -160,38 +190,50 @@ const PrototypesSection = () => {
                   aria-label="card 4"
                 >
                   <img
-                    className="focus:outline-none w-full"
-                    src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png"
-                    alt="laptop"
+                    className="focus:outline-none  w-full max-h-72 rounded-t-3xl "
+                    src={Telescopio}
+                    alt="Telescopio"
                   />
                   <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      Bruce Wayne
+                      Bruce Telescopio
                     </p>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                    >
-                      13TH Oct, 2020
-                    </p>
+                    ></p>
                   </div>
                   <div className="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
                     <h1
                       tabIndex="0"
                       className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider"
                     >
-                      Transactions
+                      Telescopio
                     </h1>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
                     >
-                      Find the latest events updates or create events, concerts,
-                      conferences, workshops...
+                      "Caldas construyo un pequeño telescopio a partir de un par
+                      de lentes que había encontrado en Popayán, con el que pudo
+                      observar, como el mismo dijera, el anillo de Saturno, los
+                      satélites de Júpiter y las zonas oscuras de este planeta.”
                     </p>
+                    <div className="w-full flex justify-end">
+                      <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                        <span className=" text-base tracking-wide text-indigo-700">
+                          Conocer mas
+                        </span>
+                        <img
+                          className="ml-2"
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-column-with-main-and-supporting-svg1.svg"
+                          alt="arrow"
+                        />
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -200,22 +242,22 @@ const PrototypesSection = () => {
                   aria-label="card 5"
                 >
                   <img
-                    className="focus:outline-none w-full"
-                    src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png"
-                    alt="worker"
+                    className="focus:outline-none  w-full max-h-72 rounded-t-3xl "
+                    src={Cartografico}
+                    alt="Cartografico"
                   />
                   <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      Bruce Wayne
+                      Proyecto cartografico de la nueva granada
                     </p>
                     <p
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      13TH Oct, 2020
+                      1815
                     </p>
                   </div>
                   <div className="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
@@ -223,15 +265,29 @@ const PrototypesSection = () => {
                       tabIndex="0"
                       className="focus:outline-none  text-lg text-gray-900 font-semibold tracking-wider"
                     >
-                      Transactions
+                      Proyecto cartografico de la nueva granada
                     </h1>
                     <p
                       tabIndex="0"
                       className="focus:outline-none  text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
                     >
-                      Find the latest events updates or create events, concerts,
-                      conferences, workshops...
+                      Caldas le presenta a Mutis en 1802 ya se esboza esta idea
+                      sobre la observación de la cordillera. Esta serie de
+                      perfiles de los Andes se construye de sur a norte y cubre
+                      una vasta extensión...
                     </p>
+                    <div className="w-full flex justify-end">
+                      <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                        <span className=" text-base tracking-wide text-indigo-700">
+                          Conocer mas
+                        </span>
+                        <img
+                          className="ml-2"
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-column-with-main-and-supporting-svg1.svg"
+                          alt="arrow"
+                        />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
