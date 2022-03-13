@@ -1,12 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
+
 import Navbar from "./components/navbar/Navbar";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <h1 className="text-3xl font-bold ">Hello world!</h1>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,58 +50,74 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="hidden sm:block sm:ml-6">
+          <div className="flex-1 flex items-center justify-between pr-10">
+            <div className="flex-shrink-0 flex items-center">
+              <img
+                className="block h-14 w-auto"
+                src="https://www.udistrital.edu.co/themes/custom/versh/logo.png"
+                alt="Workflow"
+              />
+            </div>
+            <div className="hidden sm:ml-6">
               <div className="flex space-x-4">
-                <a
-                  href="#a"
-                  className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  aria-current="page"
+                <Link
+                  to={"/"}
+                  className={`${
+                    pathname === "/"
+                      ? "bg-white text-black border-black border-b-2"
+                      : "text-black hover:border-gray-400 hover:border-b-2"
+                  } px-3 py-2 text-sm font-medium border-solid `}
+                >
+                  Inicio
+                </Link>
+                <Link
+                  to={"/prototypes"}
+                  className={`${
+                    pathname === "/prototypes"
+                      ? "bg-white text-black border-black border-b-2"
+                      : "text-black hover:border-gray-400 hover:border-b-2"
+                  } px-3 py-2 text-sm font-medium border-solid `}
                 >
                   Prototipos
-                </a>
+                </Link>
 
-                <a
-                  href="#v"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                <Link
+                  to={"/about-fjc"}
+                  className={`${
+                    pathname === "/about-fjc"
+                      ? "bg-white text-black border-black border-b-2"
+                      : "text-black hover:border-gray-400 hover:border-b-2"
+                  } px-3 py-2 text-sm font-medium border-solid `}
                 >
-                  Acerca de Francisco Jose de Caldas
-                </a>
-
-                <a
-                  href="#c"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Acerca del grupo
-                </a>
+                  Francisco Jose de Caldas
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="sm:hidden" id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#f"
+        <div className=" hidden px-2 pt-2 pb-3 space-y-1">
+          <Link
+            to={"/"}
             className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-            aria-current="page"
           >
             Prototipos
-          </a>
+          </Link>
 
-          <a
-            href="#d"
+          <Link
+            to={"/prototypes"}
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Acerca de Francisco Jose de Caldas
-          </a>
+            Prototipos
+          </Link>
 
-          <a
-            href="#s"
+          <Link
+            to={"/about-fjc"}
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Acerca del grupo
-          </a>
+            Francisco Jose de Caldas
+          </Link>
         </div>
       </div>
     </nav>
