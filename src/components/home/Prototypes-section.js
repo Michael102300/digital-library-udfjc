@@ -5,7 +5,11 @@ import Telescopio from "../../assets/img/telescopio.png";
 import Cartografico from "../../assets/img/cartografico.png";
 import CuartoCirculo from "../../assets/img/cuarto-circulo.png";
 
-const PrototypesSection = ({ setShowModalMR, setShowModalHS }) => {
+const PrototypesSection = ({
+  setShowModalMR,
+  setShowModalHS,
+  setShowModalCC,
+}) => {
   return (
     <div className="bg-gray-100 px-4 xl:px-4 py-14">
       <div className="mx-auto container">
@@ -176,7 +180,12 @@ const PrototypesSection = ({ setShowModalMR, setShowModalHS }) => {
                       de sus libros...
                     </p>
                     <div className="w-full flex justify-end">
-                      <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                      <button
+                        onClick={() =>
+                          setShowModalCC((prevState) => !prevState)
+                        }
+                        className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer"
+                      >
                         <span className=" text-base tracking-wide text-indigo-700">
                           Conocer mas
                         </span>
