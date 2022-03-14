@@ -43,7 +43,7 @@ const ModalFJC = ({ showModal, setShowModal }) => {
           <div className="p-6 space-y-6 relative">
             <div className="flex">
               <img src={Caldas} alt="photo_sabio" className="h-60 mr-5" />
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              <p className="text-base leading-relaxed text-gray-900 dark:text-gray-800">
                 Queremos acercarnos a la historia de Francisco José de Caldas.
                 Naturalista, geógrafo, ingeniero, astrónomo, científico,
                 periodista, militar, botánico… fue conocido entre sus
@@ -52,7 +52,7 @@ const ModalFJC = ({ showModal, setShowModal }) => {
                 más influyentes en la independencia de Colombia.
               </p>
             </div>
-            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            <p className="text-base leading-relaxed text-gray-900 dark:text-gray-800">
               La vida de Francisco José de Caldas parece extraída de una
               película. Nacido en 1771, desde muy niño mostró gran interés por
               las matemáticas, ciencias físicas y astronomía, si bien estudió
@@ -63,7 +63,7 @@ const ModalFJC = ({ showModal, setShowModal }) => {
               naturaleza y las costumbres de distintos pueblos y llevar a cabo
               diferentes experimentos científicos.
             </p>
-            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            <p className="text-base leading-relaxed text-gray-900 dark:text-gray-800">
               Nacido en Popayán y dotado de una fecunda inteligencia, cursó
               estudios de Latinidad y Filosofía en el colegio Seminario bajo la
               dirección de José Félix de Restrepo. Estudió Derecho en el Colegio

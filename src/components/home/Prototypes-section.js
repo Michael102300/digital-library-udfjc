@@ -5,7 +5,7 @@ import Telescopio from "../../assets/img/telescopio.png";
 import Cartografico from "../../assets/img/cartografico.png";
 import CuartoCirculo from "../../assets/img/cuarto-circulo.png";
 
-const PrototypesSection = () => {
+const PrototypesSection = ({ setShowModalMR }) => {
   return (
     <div className="bg-gray-100 px-4 xl:px-4 py-14">
       <div className="mx-auto container">
@@ -59,7 +59,10 @@ const PrototypesSection = () => {
                   pólvora con el objetivo de preparar la defensa de Antioquia.
                 </p>
                 <div className="w-full flex justify-end">
-                  <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                  <button
+                    onClick={() => setShowModalMR((prevState) => !prevState)}
+                    className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer"
+                  >
                     <span className=" text-base tracking-wide text-indigo-700">
                       Conocer mas
                     </span>
@@ -222,7 +225,8 @@ const PrototypesSection = () => {
                       observar, como el mismo dijera, el anillo de Saturno, los
                       satélites de Júpiter y las zonas oscuras de este planeta.”
                     </p>
-                    <div className="w-full flex justify-end">
+                    <div className="h-10 w-full"></div>
+                    <div className=" hidden w-full h-20 justify-end">
                       <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
                         <span className=" text-base tracking-wide text-indigo-700">
                           Conocer mas
