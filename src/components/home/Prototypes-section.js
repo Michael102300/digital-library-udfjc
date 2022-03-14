@@ -9,6 +9,7 @@ const PrototypesSection = ({
   setShowModalMR,
   setShowModalHS,
   setShowModalCC,
+  setShowModalPCNG,
 }) => {
   return (
     <div className="bg-gray-100 px-4 xl:px-4 py-14">
@@ -216,7 +217,7 @@ const PrototypesSection = ({
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      Bruce Telescopio
+                      Telescopio
                     </p>
                     <p
                       tabIndex="0"
@@ -269,7 +270,7 @@ const PrototypesSection = ({
                       tabIndex="0"
                       className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                     >
-                      Proyecto cartografico de la nueva granada
+                      Proyecto cartografico de la Nueva Granada
                     </p>
                     <p
                       tabIndex="0"
@@ -295,7 +296,12 @@ const PrototypesSection = ({
                       una vasta extensión...
                     </p>
                     <div className="w-full flex justify-end">
-                      <button className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
+                      <button
+                        onClick={() =>
+                          setShowModalPCNG((prevState) => !prevState)
+                        }
+                        className="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer"
+                      >
                         <span className=" text-base tracking-wide text-indigo-700">
                           Conocer mas
                         </span>

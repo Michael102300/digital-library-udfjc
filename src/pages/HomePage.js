@@ -9,12 +9,14 @@ import ModalFJC from "../components/modal/Modal-FJC";
 import ModalMR from "../components/modal/Modal-MR";
 import ModalHS from "../components/modal/Modal-HS";
 import ModalCC from "../components/modal/Modal-CC";
+import ModalPCNG from "../components/modal/Modal-PCNG";
 
 const HomePage = () => {
   const [showModalFJC, setShowModalFJC] = useState(false);
   const [showModalMR, setShowModalMR] = useState(false);
   const [showModalHS, setShowModalHS] = useState(false);
   const [showModalCC, setShowModalCC] = useState(false);
+  const [showModalPCNG, setShowModalPCNG] = useState(false);
   return (
     <Fragment>
       <Banner />
@@ -23,11 +25,13 @@ const HomePage = () => {
         setShowModalMR={setShowModalMR}
         setShowModalHS={setShowModalHS}
         setShowModalCC={setShowModalCC}
+        setShowModalPCNG={setShowModalPCNG}
       />
       <ModalFJC showModal={showModalFJC} setShowModal={setShowModalFJC} />
       <ModalMR showModal={showModalMR} setShowModal={setShowModalMR} />
       <ModalHS showModal={showModalHS} setShowModal={setShowModalHS} />
       <ModalCC showModal={showModalCC} setShowModal={setShowModalCC} />
+      <ModalPCNG showModal={showModalPCNG} setShowModal={setShowModalPCNG} />
     </Fragment>
   );
 };
