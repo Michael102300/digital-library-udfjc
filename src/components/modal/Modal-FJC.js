@@ -1,4 +1,5 @@
 import React from "react";
+import Caldas from "../../assets/img/caldas.png";
 
 const ModalFJC = ({ showModal, setShowModal }) => {
   return (
@@ -41,11 +42,7 @@ const ModalFJC = ({ showModal, setShowModal }) => {
           {/* <!-- Modal body --> */}
           <div className="p-6 space-y-6 relative">
             <div className="flex">
-              <img
-                src="https://www.eafit.edu.co/bicentenario/PublishingImages/caldas.png"
-                alt="photo_sabio"
-                className="h-60 mr-5"
-              />
+              <img src={Caldas} alt="photo_sabio" className="h-60 mr-5" />
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                 Queremos acercarnos a la historia de Francisco José de Caldas.
                 Naturalista, geógrafo, ingeniero, astrónomo, científico,
