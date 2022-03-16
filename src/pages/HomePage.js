@@ -17,6 +17,7 @@ const HomePage = () => {
   const [showModalHS, setShowModalHS] = useState(false);
   const [showModalCC, setShowModalCC] = useState(false);
   const [showModalPCNG, setShowModalPCNG] = useState(false);
+
   return (
     <Fragment>
       <Banner />

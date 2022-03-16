@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
-const Navbar = () => {
-  const { pathname } = useLocation();
+const Navbar = ({ setShowModal }) => {
   return (
     <nav className="bg-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -58,66 +55,27 @@ const Navbar = () => {
                 alt="Workflow"
               />
             </div>
-            <div className="hidden sm:ml-6">
+            <div className="sm:ml-6">
               <div className="flex space-x-4">
-                <Link
-                  to={"/"}
-                  className={`${
-                    pathname === "/"
-                      ? "bg-white text-black border-black border-b-2"
-                      : "text-black hover:border-gray-400 hover:border-b-2"
-                  } px-3 py-2 text-sm font-medium border-solid `}
+                <button
+                  onClick={() => setShowModal((prevState) => !prevState)}
+                  className={`text-black hover:border-gray-400 hover:border-b-2 px-3 py-2 text-sm font-medium border-solid `}
                 >
-                  Inicio
-                </Link>
-                <Link
-                  to={"/prototypes"}
-                  className={`${
-                    pathname === "/prototypes"
-                      ? "bg-white text-black border-black border-b-2"
-                      : "text-black hover:border-gray-400 hover:border-b-2"
-                  } px-3 py-2 text-sm font-medium border-solid `}
-                >
-                  Prototipos
-                </Link>
-
-                <Link
-                  to={"/about-fjc"}
-                  className={`${
-                    pathname === "/about-fjc"
-                      ? "bg-white text-black border-black border-b-2"
-                      : "text-black hover:border-gray-400 hover:border-b-2"
-                  } px-3 py-2 text-sm font-medium border-solid `}
-                >
-                  Francisco Jose de Caldas
-                </Link>
+                  Webgrafia
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="sm:hidden" id="mobile-menu">
-        <div className=" hidden px-2 pt-2 pb-3 space-y-1">
-          <Link
-            to={"/"}
-            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          <button
+            onClick={() => setShowModal((prevState) => !prevState)}
+            className={`text-black hover:border-gray-400 hover:border-b-2 px-3 py-2 text-sm font-medium border-solid `}
           >
-            Prototipos
-          </Link>
-
-          <Link
-            to={"/prototypes"}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Prototipos
-          </Link>
-
-          <Link
-            to={"/about-fjc"}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Francisco Jose de Caldas
-          </Link>
+            Webgrafia
+          </button>
         </div>
       </div>
     </nav>
